@@ -1,11 +1,14 @@
 package domain;
+import bootstrap.driver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 public class board {
 
+    public static Logger logger = LoggerFactory.getLogger(board.class);
     private final int ROWS = 10;
     private final int COLS = 10;
     private final int NoSnakes = 8;
@@ -88,12 +91,10 @@ public class board {
             else {
                 for (int id = 0; id < NoSnakes; id++){
                     if (snakes[id][0] == position){
-
                         position = snakes[id][1];
                         playerPositions.put(player, position);
-
                         System.out.println("Snake Bites " + player + " from " + snakes[id][0] + " to " + snakes[id][1]);
-
+                        logger.info("Snake Bites " + player + " from " + snakes[id][0] + " to " + snakes[id][1]);
                         return false;
                     }
                 }
@@ -101,9 +102,8 @@ public class board {
                     if (ladders[id][0] == position){
                         position = ladders[id][1];
                         playerPositions.put(player, position);
-
                         System.out.println( player + " climbs ladder from " + ladders[id][0] + " to " + ladders[id][1]);
-
+                        logger.info( player + " climbs ladder from " + ladders[id][0] + " to " + ladders[id][1]);
                         return false;
                     }
                 }
