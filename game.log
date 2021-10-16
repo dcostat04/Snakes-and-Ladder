@@ -154,3 +154,69 @@
 2021-10-16 21:01:18,355 [main] INFO  domain.Player - Pratik's turn: 
 2021-10-16 21:01:18,404 [main] INFO  domain.Player - Pratik rolled 10.
 2021-10-16 21:01:18,404 [main] INFO  bootstrap.driver - Pratik wins
+2021-10-16 21:08:51,263 [main] INFO  bootstrap.driver - *********************************Welcome to Snakes & Ladders by Trevor D'Costa******************************
+2021-10-16 21:08:52,525 [main] INFO  domain.Player - Trevor's turn: 
+2021-10-16 21:08:53,213 [main] INFO  domain.Player - Trevor rolled 7.
+2021-10-16 21:08:53,214 [main] INFO  domain.Player - Edwin's turn: 
+2021-10-16 21:08:54,127 [main] INFO  domain.Player - Edwin rolled 4.
+2021-10-16 21:08:54,127 [main] INFO  domain.board - Edwin climbs ladder from 4 to 14
+2021-10-16 21:08:54,128 [main] INFO  domain.Player - Pratik's turn: 
+2021-10-16 21:08:55,153 [main] INFO  domain.Player - Pratik rolled 9.
+2021-10-16 21:08:55,153 [main] INFO  domain.board - Pratik climbs ladder from 9 to 31
+2021-10-16 21:08:55,153 [main] INFO  domain.Player - Christopher's turn: 
+2021-10-16 21:08:55,786 [main] INFO  domain.Player - Christopher rolled 9.
+2021-10-16 21:08:55,787 [main] INFO  domain.board - Christopher climbs ladder from 9 to 31
+2021-10-16 21:08:55,787 [main] INFO  domain.Player - Trevor's turn: 
+2021-10-16 21:08:55,824 [main] INFO  domain.Player - Trevor rolled 6.
+2021-10-16 21:08:55,825 [main] INFO  domain.Player - Edwin's turn: 
+2021-10-16 21:08:55,865 [main] INFO  domain.Player - Edwin rolled 5.
+2021-10-16 21:08:55,865 [main] INFO  domain.Player - Pratik's turn: 
+2021-10-16 21:08:55,902 [main] INFO  domain.Player - Pratik rolled 7.
+2021-10-16 21:08:55,903 [main] INFO  domain.Player - Christopher's turn: 
+2021-10-16 21:08:55,943 [main] INFO  domain.Player - Christopher rolled 9.
+2021-10-16 21:08:55,943 [main] INFO  domain.board - Christopher climbs ladder from 40 to 59
+2021-10-16 21:08:55,944 [main] INFO  domain.Player - Trevor's turn: 
+2021-10-16 21:08:55,980 [main] INFO  domain.Player - Trevor rolled 6.
+2021-10-16 21:08:55,981 [main] INFO  domain.Player - Edwin's turn: 
+2021-10-16 21:08:56,026 [main] INFO  domain.Player - Edwin rolled 6.
+2021-10-16 21:08:56,027 [main] INFO  domain.Player - Pratik's turn: 
+2021-10-16 21:08:56,056 [main] INFO  domain.Player - Pratik rolled 5.
+2021-10-16 21:08:56,057 [main] INFO  domain.Player - Christopher's turn: 
+2021-10-16 21:08:56,093 [main] INFO  domain.Player - Christopher rolled 9.
+2021-10-16 21:08:56,094 [main] INFO  domain.Player - Trevor's turn: 
+2021-10-16 21:08:56,136 [main] INFO  domain.Player - Trevor rolled 4.
+2021-10-16 21:08:56,137 [main] INFO  domain.Player - Edwin's turn: 
+2021-10-16 21:08:56,170 [main] INFO  domain.Player - Edwin rolled 7.
+2021-10-16 21:08:56,170 [main] INFO  domain.Player - Pratik's turn: 
+2021-10-16 21:08:56,215 [main] INFO  domain.Player - Pratik rolled 8.
+2021-10-16 21:08:56,215 [main] INFO  domain.board - Pratik climbs ladder from 51 to 67
+2021-10-16 21:08:56,216 [main] INFO  domain.Player - Christopher's turn: 
+2021-10-16 21:08:56,248 [main] INFO  domain.Player - Christopher rolled 5.
+2021-10-16 21:08:56,249 [main] INFO  domain.Player - Trevor's turn: 
+2021-10-16 21:08:56,290 [main] INFO  domain.Player - Trevor rolled 5.
+2021-10-16 21:08:56,290 [main] INFO  domain.board - Trevor climbs ladder from 28 to 84
+2021-10-16 21:08:56,291 [main] INFO  domain.Player - Edwin's turn: 
+2021-10-16 21:08:56,328 [main] INFO  domain.Player - Edwin rolled 10.
+2021-10-16 21:08:56,328 [main] INFO  domain.Player - Pratik's turn: 
+2021-10-16 21:08:56,369 [main] INFO  domain.Player - Pratik rolled 8.
+2021-10-16 21:08:56,369 [main] INFO  domain.Player - Christopher's turn: 
+2021-10-16 21:08:56,405 [main] INFO  domain.Player - Christopher rolled 11.
+2021-10-16 21:08:56,406 [main] INFO  domain.Player - Trevor's turn: 
+2021-10-16 21:08:56,438 [main] INFO  domain.Player - Trevor rolled 6.
+2021-10-16 21:08:56,439 [main] INFO  domain.Player - Edwin's turn: 
+2021-10-16 21:08:56,477 [main] INFO  domain.Player - Edwin rolled 10.
+2021-10-16 21:08:56,477 [main] INFO  domain.Player - Pratik's turn: 
+2021-10-16 21:08:56,517 [main] INFO  domain.Player - Pratik rolled 10.
+2021-10-16 21:08:56,517 [main] INFO  domain.Player - Christopher's turn: 
+2021-10-16 21:08:56,559 [main] INFO  domain.Player - Christopher rolled 8.
+2021-10-16 21:08:56,560 [main] INFO  domain.Player - Trevor's turn: 
+2021-10-16 21:08:56,595 [main] INFO  domain.Player - Trevor rolled 7.
+2021-10-16 21:08:56,596 [main] INFO  domain.Player - Edwin's turn: 
+2021-10-16 21:08:56,637 [main] INFO  domain.Player - Edwin rolled 8.
+2021-10-16 21:08:56,637 [main] INFO  domain.Player - Pratik's turn: 
+2021-10-16 21:08:56,674 [main] INFO  domain.Player - Pratik rolled 5.
+2021-10-16 21:08:56,675 [main] INFO  domain.Player - Christopher's turn: 
+2021-10-16 21:08:56,715 [main] INFO  domain.Player - Christopher rolled 5.
+2021-10-16 21:08:56,715 [main] INFO  domain.Player - Trevor's turn: 
+2021-10-16 21:08:56,751 [main] INFO  domain.Player - Trevor rolled 8.
+2021-10-16 21:08:56,751 [main] INFO  bootstrap.driver - Trevor wins
