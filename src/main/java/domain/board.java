@@ -1,24 +1,19 @@
 package domain;
-import bootstrap.driver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import java.util.*;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-public class board {
-
+public class board  {
     public static Logger logger = LoggerFactory.getLogger(board.class);
     private final int ROWS = 10;
     private final int COLS = 10;
     private final int NoSnakes = 8;
     private final int NoLadders = 8;
-
     private int[][] gameBoard;
     private int[][] snakes;
     private int[][] ladders;
-
-
     private void setSnakes(){
         snakes = new int[NoSnakes][2];
         snakes[0][0] = 17;
@@ -38,8 +33,6 @@ public class board {
         snakes[7][0] = 99;
         snakes[7][1] = 78;
     }
-
-
     private void setLadders(){
         ladders = new int[NoLadders][2];
         ladders[0][0] = 4;
@@ -59,12 +52,8 @@ public class board {
         ladders[7][0] = 71;
         ladders[7][1] = 91;
     }
-
-
     Map<Player, Integer> playerPositions;
-
         public board(List<Player> players){
-
             this.playerPositions = new HashMap<Player, Integer>();
             for (Player player : players){
                 this.playerPositions.put(player, 0);
@@ -78,13 +67,19 @@ public class board {
             setSnakes();
             setLadders();
         }
+        public boolean movePlayer(Player player, List<Future<Integer>> value){
+           int position = playerPositions.get(player);
+           for (int i=0;i<1;i++){
+               try {
+                   position = position + value.get(i).get();
+               } catch (InterruptedException e) {
+                   e.printStackTrace();
+               } catch (ExecutionException e) {
+                   e.printStackTrace();
+               }
+           }
 
-        public boolean movePlayer(Player player, int value){
-
-            int position = playerPositions.get(player);
-            position += value;
             if (position >= 100){
-
                 playerPositions.put(player, 100);
                 return true;
             }
@@ -93,7 +88,6 @@ public class board {
                     if (snakes[id][0] == position){
                         position = snakes[id][1];
                         playerPositions.put(player, position);
-                        System.out.println("Snake Bites " + player + " from " + snakes[id][0] + " to " + snakes[id][1]);
                         logger.info("Snake Bites " + player + " from " + snakes[id][0] + " to " + snakes[id][1]);
                         return false;
                     }
@@ -102,7 +96,6 @@ public class board {
                     if (ladders[id][0] == position){
                         position = ladders[id][1];
                         playerPositions.put(player, position);
-                        System.out.println( player + " climbs ladder from " + ladders[id][0] + " to " + ladders[id][1]);
                         logger.info( player + " climbs ladder from " + ladders[id][0] + " to " + ladders[id][1]);
                         return false;
                     }
@@ -113,54 +106,4 @@ public class board {
         }
 
 
-
-        @Override
-        public String toString(){
-
-            StringBuilder sb = new StringBuilder();
-            boolean oddRow = true;
-
-            for (int row = ROWS-1; row >= 0; row--){
-                for (int col = 0; col < COLS; col++){
-                    if (oddRow){
-                        String pl = "";
-                        boolean occupied = false;
-                        for (Player temp : playerPositions.keySet()){
-                            if (playerPositions.get(temp) == gameBoard[row][COLS-1-col]){
-                                occupied = true;
-                                pl += temp + " ";
-                            }
-                        }
-
-                        if (occupied){
-                            pl += "\t";
-                            sb.append(pl);
-                        } else {
-                            sb.append(gameBoard[row][COLS-1-col] + "\t");
-                        }
-                    } else {
-                        boolean occupied = false;
-                        String pl = "";
-                        for (Player temp : playerPositions.keySet()){
-                            if (playerPositions.get(temp) == gameBoard[row][col]){
-                                occupied = true;
-                                pl += (temp + " ");
-                            }
-                        }
-
-                        if (occupied){
-                            pl += "\t";
-                            sb.append(pl);
-                        } else {
-                            sb.append(gameBoard[row][col] + "\t");
-                        }
-                    }
-                }
-                oddRow = !oddRow;
-                sb.append("\n");
-            }
-            sb.append("\n");
-            return sb.toString();
-        }
-    }
-
+}
